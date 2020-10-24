@@ -425,40 +425,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Excel 从区域到表</title>
-    <url>/2020/07/13/20200713-Excel%20%E4%BB%8E%E5%8C%BA%E5%9F%9F%E5%88%B0%E8%A1%A8/</url>
-    <content><![CDATA[<h1 id="Excel-从区域到表"><a href="#Excel-从区域到表" class="headerlink" title="Excel 从区域到表"></a>Excel 从区域到表</h1><h2 id="单元格和区域"><a href="#单元格和区域" class="headerlink" title="单元格和区域"></a>单元格和区域</h2><p><strong>单元格</strong>是Excel中构成工作表的最基础组成元素，也是Excel中的最小操作对象。多个单元格组成的群组则就称为<strong>区域</strong>。</p>
-<p>单元格的地址是由行号和列标构成，其中列标在前，行号在后。如下图用黄色表示的两个单元格的地址分别是B2和D5。</p>
-<p>由这两个单元格就可以构成一个区域，由于连个单元格不相邻，因此又叫做<strong>离散区域</strong>。该区域的地址可以这样表示：B2,D5。</p>
-<p><img src="http://i2.tiimg.com/700295/e619dda3083a00cd.png" alt="img"></p>
-<h2 id="从区域到表"><a href="#从区域到表" class="headerlink" title="从区域到表"></a>从区域到表</h2><p>在最初的 Excel 版本当中，并没有明确区分区域和表的概念。但是，随着我们对数据处理效率要求的提高，单纯的单元格和区域的操作就显得十分不便，<strong>我们希望有一种方式能批量的对表当中的字段进行处理和运算，并且能随着源数据记录的更新而更新，而不需要重复操作。</strong></p>
-<p>这个需求包括了两点：</p>
-<ol>
-<li><strong>让软件运算更快：批量对整个字段运算，而非逐一对每个单元格迭代运算。</strong></li>
-<li><strong>让软件更加智能：一键刷新，更新结果。</strong></li>
-</ol>
-<p>为了解决这样的需求，微软给出了他的第一个解决方案：<strong>引入表结构概念。</strong>我们先来一起看一下下面这张图，大家可以先来判断一下图中左边的是表，还是右边的是表？</p>
-<p><img src="http://i1.fuimg.com/700295/de878772ea3f1c26.png" alt="img"></p>
-<p>如果能正确的区分 Excel 当中的区域和表，那么，恭喜您！您已经战胜了超过80%的 Excel  用户。清楚 Excel 当中表的概念，意味着我们不仅仅是把 Excel 当作一个电子表格来使用，而是把它作为了一个 数据分析工具。</p>
-<p>上图中，正确的应该是左边是区域，右边的是表。如果想把区域转换成表，我们可以先选中这块灰色区域，然后在Excel开始选项卡中，套用一个表格格式，创建一个表如下：</p>
-<p><img src="http://i2.tiimg.com/700295/8cd5ead8ea9acac0.png" alt="img"></p>
-<p>可以看到，软件自动给我们添加了一个筛选器，并且右下角多了一个角标，它表示了这个表所引用的区域范围。</p>
-<p>那么在Excel中将区域变成表之后，能有什么优势呢？</p>
-<p>下面，我们通过视频来对区域和表进行对比测试以下两点需求：</p>
-<ol>
-<li><strong>让软件运算更快：批量对整个字段运算，而非逐一对每个单元格迭代运算。</strong></li>
-<li><strong>让软件更加智能：一键刷新，更新结果。</strong></li>
-</ol>
-<p>视频链接：《 Power BI 入门：从区域到表 》</p>
-]]></content>
-      <categories>
-        <category>Power BI 入门</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>高效的数据处理神器：Power Query</title>
     <url>/2020/07/14/20200714-%E9%AB%98%E6%95%88%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%A5%9E%E5%99%A8%EF%BC%9APower%20Query/</url>
     <content><![CDATA[<h1 id="高效的数据处理神器：Power-Query"><a href="#高效的数据处理神器：Power-Query" class="headerlink" title="高效的数据处理神器：Power Query"></a>高效的数据处理神器：Power Query</h1><h2 id="什么是Excel-Power-Query？"><a href="#什么是Excel-Power-Query？" class="headerlink" title="什么是Excel Power Query？"></a>什么是Excel Power Query？</h2><p>Excel Power Query 是Excel 用于数据分析的三大组件之一，其它两个分别是Excel Power Pivot 和 Excel Power View。在微软Excel2010 版和 Excel2013 版中作为插件使用，需要在官网进行下载，直到Excel 2016 版之后微软便将其作为 Excel 的组成部分嵌入在软件当中。</p>
@@ -490,6 +456,40 @@
       <tags>
         <tag>Excel</tag>
         <tag>Power Query</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Excel 从区域到表</title>
+    <url>/2020/07/13/20200713-Excel%20%E4%BB%8E%E5%8C%BA%E5%9F%9F%E5%88%B0%E8%A1%A8/</url>
+    <content><![CDATA[<h1 id="Excel-从区域到表"><a href="#Excel-从区域到表" class="headerlink" title="Excel 从区域到表"></a>Excel 从区域到表</h1><h2 id="单元格和区域"><a href="#单元格和区域" class="headerlink" title="单元格和区域"></a>单元格和区域</h2><p><strong>单元格</strong>是Excel中构成工作表的最基础组成元素，也是Excel中的最小操作对象。多个单元格组成的群组则就称为<strong>区域</strong>。</p>
+<p>单元格的地址是由行号和列标构成，其中列标在前，行号在后。如下图用黄色表示的两个单元格的地址分别是B2和D5。</p>
+<p>由这两个单元格就可以构成一个区域，由于连个单元格不相邻，因此又叫做<strong>离散区域</strong>。该区域的地址可以这样表示：B2,D5。</p>
+<p><img src="http://i2.tiimg.com/700295/e619dda3083a00cd.png" alt="img"></p>
+<h2 id="从区域到表"><a href="#从区域到表" class="headerlink" title="从区域到表"></a>从区域到表</h2><p>在最初的 Excel 版本当中，并没有明确区分区域和表的概念。但是，随着我们对数据处理效率要求的提高，单纯的单元格和区域的操作就显得十分不便，<strong>我们希望有一种方式能批量的对表当中的字段进行处理和运算，并且能随着源数据记录的更新而更新，而不需要重复操作。</strong></p>
+<p>这个需求包括了两点：</p>
+<ol>
+<li><strong>让软件运算更快：批量对整个字段运算，而非逐一对每个单元格迭代运算。</strong></li>
+<li><strong>让软件更加智能：一键刷新，更新结果。</strong></li>
+</ol>
+<p>为了解决这样的需求，微软给出了他的第一个解决方案：<strong>引入表结构概念。</strong>我们先来一起看一下下面这张图，大家可以先来判断一下图中左边的是表，还是右边的是表？</p>
+<p><img src="http://i1.fuimg.com/700295/de878772ea3f1c26.png" alt="img"></p>
+<p>如果能正确的区分 Excel 当中的区域和表，那么，恭喜您！您已经战胜了超过80%的 Excel  用户。清楚 Excel 当中表的概念，意味着我们不仅仅是把 Excel 当作一个电子表格来使用，而是把它作为了一个 数据分析工具。</p>
+<p>上图中，正确的应该是左边是区域，右边的是表。如果想把区域转换成表，我们可以先选中这块灰色区域，然后在Excel开始选项卡中，套用一个表格格式，创建一个表如下：</p>
+<p><img src="http://i2.tiimg.com/700295/8cd5ead8ea9acac0.png" alt="img"></p>
+<p>可以看到，软件自动给我们添加了一个筛选器，并且右下角多了一个角标，它表示了这个表所引用的区域范围。</p>
+<p>那么在Excel中将区域变成表之后，能有什么优势呢？</p>
+<p>下面，我们通过视频来对区域和表进行对比测试以下两点需求：</p>
+<ol>
+<li><strong>让软件运算更快：批量对整个字段运算，而非逐一对每个单元格迭代运算。</strong></li>
+<li><strong>让软件更加智能：一键刷新，更新结果。</strong></li>
+</ol>
+<p>视频链接：《 Power BI 入门：从区域到表 》</p>
+]]></content>
+      <categories>
+        <category>Power BI 入门</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
       </tags>
   </entry>
   <entry>
