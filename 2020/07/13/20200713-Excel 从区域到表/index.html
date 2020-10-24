@@ -1,37 +1,198 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
 
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Excel 从区域到表 - Guiyi&#39;s blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="在理性的基础上，一切判断都是统计学。,Excel 从区域到表单元格和区域单元格是Excel中构成工作表的最基础组成元素，也是Excel中的最小操作对象。多个单元格组成的群组则就称为区域。
+单元格的地址是由行号和列标构成，其中列标在前，行,"> 
+    <meta name="author" content="归一"> 
+    <link rel="alternative" href="atom.xml" title="Guiyi&#39;s blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
-{% block page_class %}page-post-detail{% endblock %}
-
-
-{% block content %}
-
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
-
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+<body class="loading">
+    <span id="config-title" style="display:none">Guiyi&#39;s blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://guiyiblog.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Excel 从区域到表</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
     </div>
-  </div>
+    <div class="scrollbar"></div>
+</div>
 
-{% endblock %}
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Excel 从区域到表</h1>
+        <div class="stuff">
+            <span>七月 13, 2020</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Excel/" rel="tag">Excel</a></li></ul>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+        </div>
+        <div class="content markdown">
+            <h1 id="Excel-从区域到表"><a href="#Excel-从区域到表" class="headerlink" title="Excel 从区域到表"></a>Excel 从区域到表</h1><h2 id="单元格和区域"><a href="#单元格和区域" class="headerlink" title="单元格和区域"></a>单元格和区域</h2><p><strong>单元格</strong>是Excel中构成工作表的最基础组成元素，也是Excel中的最小操作对象。多个单元格组成的群组则就称为<strong>区域</strong>。</p>
+<p>单元格的地址是由行号和列标构成，其中列标在前，行号在后。如下图用黄色表示的两个单元格的地址分别是B2和D5。</p>
+<p>由这两个单元格就可以构成一个区域，由于连个单元格不相邻，因此又叫做<strong>离散区域</strong>。该区域的地址可以这样表示：B2,D5。</p>
+<p><img src="http://i2.tiimg.com/700295/e619dda3083a00cd.png" alt="img"></p>
+<h2 id="从区域到表"><a href="#从区域到表" class="headerlink" title="从区域到表"></a>从区域到表</h2><p>在最初的 Excel 版本当中，并没有明确区分区域和表的概念。但是，随着我们对数据处理效率要求的提高，单纯的单元格和区域的操作就显得十分不便，<strong>我们希望有一种方式能批量的对表当中的字段进行处理和运算，并且能随着源数据记录的更新而更新，而不需要重复操作。</strong></p>
+<p>这个需求包括了两点：</p>
+<ol>
+<li><strong>让软件运算更快：批量对整个字段运算，而非逐一对每个单元格迭代运算。</strong></li>
+<li><strong>让软件更加智能：一键刷新，更新结果。</strong></li>
+</ol>
+<p>为了解决这样的需求，微软给出了他的第一个解决方案：<strong>引入表结构概念。</strong>我们先来一起看一下下面这张图，大家可以先来判断一下图中左边的是表，还是右边的是表？</p>
+<p><img src="http://i1.fuimg.com/700295/de878772ea3f1c26.png" alt="img"></p>
+<p>如果能正确的区分 Excel 当中的区域和表，那么，恭喜您！您已经战胜了超过80%的 Excel  用户。清楚 Excel 当中表的概念，意味着我们不仅仅是把 Excel 当作一个电子表格来使用，而是把它作为了一个 数据分析工具。</p>
+<p>上图中，正确的应该是左边是区域，右边的是表。如果想把区域转换成表，我们可以先选中这块灰色区域，然后在Excel开始选项卡中，套用一个表格格式，创建一个表如下：</p>
+<p><img src="http://i2.tiimg.com/700295/8cd5ead8ea9acac0.png" alt="img"></p>
+<p>可以看到，软件自动给我们添加了一个筛选器，并且右下角多了一个角标，它表示了这个表所引用的区域范围。</p>
+<p>那么在Excel中将区域变成表之后，能有什么优势呢？</p>
+<p>下面，我们通过视频来对区域和表进行对比测试以下两点需求：</p>
+<ol>
+<li><strong>让软件运算更快：批量对整个字段运算，而非逐一对每个单元格迭代运算。</strong></li>
+<li><strong>让软件更加智能：一键刷新，更新结果。</strong></li>
+</ol>
+<p>视频链接：《 Power BI 入门：从区域到表 》</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

@@ -1,37 +1,232 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
 
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>零售密码：周权重指数 - Guiyi&#39;s blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="在理性的基础上，一切判断都是统计学。,零售密码：周权重指数零售业的规律是以周为单位不断循环的过程。无论是传统零售还是电子商务都会遵循这种规律，区别是传统零售一般周末是销售高峰，电子商务周末反而一般。
+权重指数的计算为了分析零售业的日销售,"> 
+    <meta name="author" content="归一"> 
+    <link rel="alternative" href="atom.xml" title="Guiyi&#39;s blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
-{% block page_class %}page-post-detail{% endblock %}
-
-
-{% block content %}
-
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
-
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+<body class="loading">
+    <span id="config-title" style="display:none">Guiyi&#39;s blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://guiyiblog.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">零售密码：周权重指数</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
     </div>
-  </div>
+    <div class="scrollbar"></div>
+</div>
 
-{% endblock %}
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">零售密码：周权重指数</h1>
+        <div class="stuff">
+            <span>五月 01, 2020</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/" rel="tag">方法论</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%94%B5%E5%95%86%E9%9B%B6%E5%94%AE/" rel="tag">电商零售</a></li></ul>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+        </div>
+        <div class="content markdown">
+            <h1 id="零售密码：周权重指数"><a href="#零售密码：周权重指数" class="headerlink" title="零售密码：周权重指数"></a>零售密码：周权重指数</h1><p>零售业的规律是以周为单位不断循环的过程。无论是传统零售还是电子商务都会遵循这种规律，区别是传统零售一般周末是销售高峰，电子商务周末反而一般。</p>
+<h2 id="权重指数的计算"><a href="#权重指数的计算" class="headerlink" title="权重指数的计算"></a>权重指数的计算</h2><p>为了分析零售业的日销售规律，我们构造<strong>权重指数</strong>来进行观察，权重指数的目的是为了给365天都赋予权重值。正常状态下赋予每天常规的权重，促销时则使用将促销级别考虑进去的特殊权重，节假日则使用节假日权重。</p>
+<p><strong>正常状态下的权重指数计算：</strong></p>
+<ol>
+<li><p><strong>计算企业周权重指数：</strong></p>
+<ul>
+<li>收集企业每个完整店铺最近一个完整年度的日销售额数据</li>
+<li><strong>数据预处理：</strong>剔除法定节假日、法定假期的调休日、行业特殊日（如情人节、三八节、儿童节、圣诞节等）、非正常销售日（指不可抗力或人为影响的销售日）</li>
+<li>以周为单位整理数据，计算星期N 的平均销售额</li>
+<li>找到一周中最低的平均销售额，设定它的日权重指数为1.0，然后分布用其余六天的平均销售额除以这个最小值，得到其余六天的日权重指数</li>
+<li>将7天的日权重指数相加，即是企业的周权重指数</li>
+</ul>
+</li>
+<li><p><strong>计算各分部（分店）的日权重指数：</strong></p>
+<ul>
+<li>收集分部三个月的销售数据，一般是最近两个月和去年同期月份数据。如预测2013年10月的分部销售规律时，可以收集2013年8月、9月和2012年10月的数据。</li>
+<li>数据预处理：同上</li>
+<li>以周为单位整理数据，计算星期N 的平均销售额和平均周销售额。</li>
+<li>星期N 的日权重指数 = （ 星期N 的平均销售额 ➗ 平均周销售额 ） ✖ 企业周权重指数</li>
+</ul>
+</li>
+</ol>
+<p><strong>节假日的权重指数计算：</strong></p>
+<ol>
+<li>取三年历史数据，每年取节假日附近2~4个标准周的销售数据作为参考</li>
+<li>计算附近2~4个标准周的<strong>单位权重（销售值）值</strong>，计算公式为：总销售额 ➗ 总权重指数</li>
+<li>计算节假日的权重指数：日权重指数 = 日销售额 / 单位权重（销售）值</li>
+<li>重复以上计算过程，计算三年的节假日权重指数，取三年平均。</li>
+</ol>
+<p><strong>促销日的权重指数计算：</strong></p>
+<p>日权重指数 = 正常情况下的日权重指数 * （1 + 该促销活动历史增长率 ）</p>
+<h2 id="权重指数的应用"><a href="#权重指数的应用" class="headerlink" title="权重指数的应用"></a>权重指数的应用</h2><h3 id="判断零售店铺周销售规律"><a href="#判断零售店铺周销售规律" class="headerlink" title="判断零售店铺周销售规律"></a>判断零售店铺周销售规律</h3><p>权重指数可以用来分析店铺、区域、品牌等等对象的销售规律，对品牌或企业营运有积极的指导意义，我们可以根据权重指数的高低来安排店铺的员工排班、安排店铺的陈列调整时间、部署送货时间窗口等。</p>
+<h3 id="分解日销售目标"><a href="#分解日销售目标" class="headerlink" title="分解日销售目标"></a>分解日销售目标</h3><p>日销售目标 = 月销售目标 ✖ （日权重指数 ➗ 月权重指数 ）</p>
+<h3 id="月销售预测"><a href="#月销售预测" class="headerlink" title="月销售预测"></a>月销售预测</h3><p>用1-18日的实际销售额预测月销售额</p>
+<p>月销售预测值 = 1-18日总销售额 ➗ （1-18日总日权重指数 ➗ 月权重指数 ）</p>
+<p>注意：用于预测的天数需从1日开始，至少大于10天，且每天都可以实时更新预测数据，所用预测天数越多越准确。</p>
+<h3 id="销售对比"><a href="#销售对比" class="headerlink" title="销售对比"></a>销售对比</h3><p>进行对比分析的第一要素就是必须要有可对比性，否则就可能误导受众。日销售数据的同比需要遵循如下准则：</p>
+<ol>
+<li>首先遵循星期几对比星期几的原则，因为这是零售业的基本规律。</li>
+<li>其次遵循公众假期对比原则，例如2014年5月1日（星期四）应该和2013年4月29日（星期三）对比，因为这两个日子都是五一放假的第一天。</li>
+<li>再次遵循中国阴历对等对比原则，这种情况只是出现在每年春季期间，初一和初一对比。春节放假结束后又回归到 1 中对比。</li>
+<li>最后遵循阳历对等对比原则，这适合一些特殊日期和特殊的行业，例如鲜花和巧克力要遵循2月14日对比原则，女士用品特别是服装和化妆品遵循三八节对比原则，玩具行业遵循六一对比原则等。</li>
+</ol>
+<p><strong>如何解决上述 “时间标准” 有时没有对比性原则的问题？</strong></p>
+<p>可以使用单位权重值法。</p>
+<p><strong>单位权重（销售）值 = 某时间段总日销售额 ➗ 某时间段总日权重指数</strong></p>
+<p>单位权重（销售）值这个概念可以被放大，只需要把 “销售” 替换成例如店铺的人流、网站的UV（独立访客）、呼叫中心的电话量等就行。</p>
+<h3 id="神奇的黄氏曲线——单位权重（销售）值曲线"><a href="#神奇的黄氏曲线——单位权重（销售）值曲线" class="headerlink" title="神奇的黄氏曲线——单位权重（销售）值曲线"></a>神奇的黄氏曲线——单位权重（销售）值曲线</h3><p>下面简称：权重曲线。</p>
+<p>如果一个零售店铺的每日销售额是绝对服从周权重指数的规律，那对应的权重曲线则将是一条绝对水平直线，而这种情况是根本不可能出现的，正常的权重曲线是一条围绕某个值变化的曲线，<strong>正是这种变化给我们提供了去洞悉某些运营现象的可能。（有变化才有可能，有变化才有希望。）</strong></p>
+<p>这种变化说明有某种业务逻辑暗含其中，具体原因需要把权重曲线剥开看。</p>
+<h4 id="应用在销售追踪过程中"><a href="#应用在销售追踪过程中" class="headerlink" title="应用在销售追踪过程中"></a>应用在销售追踪过程中</h4><p>用权重曲线图监控销售变化，如发现 ”月初放松“ ，” 月末刹车“ 等现象。</p>
+<h4 id="特殊事件的量化处理——事后分析"><a href="#特殊事件的量化处理——事后分析" class="headerlink" title="特殊事件的量化处理——事后分析"></a>特殊事件的量化处理——事后分析</h4><p><strong>如何评估 “某特殊事件” （如节日、促销、恶劣天气等）对销售的影响？</strong></p>
+<p>针对这类问题，我们可以借助权重曲线来进行评估。</p>
+<p><strong>绘制黄氏曲线：</strong>计算事件前一段时间的平均单位权重值、事件发生期间的平均单位权重值、事件发生后一段事件的平均单位权重值。</p>
+<p>如何量化影响了多少销售额呢？</p>
+<p><img src="http://i1.fuimg.com/700295/04f0145705caf824.jpg"></p>
+<p>对于黄氏曲线的应用，一定需要注意是 “突发” 状态，就是要有非常清洗的时间节点、非常明确的事件信息状态才可以使用；另外建议要同时画权重曲线和黄氏曲线，权重曲线是用来进行追踪跟进的，用它可以及时反应状态在数据上的变化，以便及时采取对应的策略调整。黄氏曲线是用来分析和评估的，所以它是 “事后” 工作。</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

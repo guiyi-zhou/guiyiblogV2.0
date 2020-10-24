@@ -1,37 +1,196 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
 
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>高效的数据处理神器：Power Query - Guiyi&#39;s blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="在理性的基础上，一切判断都是统计学。,高效的数据处理神器：Power Query什么是Excel Power Query？Excel Power Query 是Excel 用于数据分析的三大组件之一，其它两个分别是Excel Power,"> 
+    <meta name="author" content="归一"> 
+    <link rel="alternative" href="atom.xml" title="Guiyi&#39;s blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
-{% block page_class %}page-post-detail{% endblock %}
-
-
-{% block content %}
-
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
-
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+<body class="loading">
+    <span id="config-title" style="display:none">Guiyi&#39;s blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://guiyiblog.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">高效的数据处理神器：Power Query</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
     </div>
-  </div>
+    <div class="scrollbar"></div>
+</div>
 
-{% endblock %}
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">高效的数据处理神器：Power Query</h1>
+        <div class="stuff">
+            <span>七月 14, 2020</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Excel/" rel="tag">Excel</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Power-Query/" rel="tag">Power Query</a></li></ul>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+        </div>
+        <div class="content markdown">
+            <h1 id="高效的数据处理神器：Power-Query"><a href="#高效的数据处理神器：Power-Query" class="headerlink" title="高效的数据处理神器：Power Query"></a>高效的数据处理神器：Power Query</h1><h2 id="什么是Excel-Power-Query？"><a href="#什么是Excel-Power-Query？" class="headerlink" title="什么是Excel Power Query？"></a>什么是Excel Power Query？</h2><p>Excel Power Query 是Excel 用于数据分析的三大组件之一，其它两个分别是Excel Power Pivot 和 Excel Power View。在微软Excel2010 版和 Excel2013 版中作为插件使用，需要在官网进行下载，直到Excel 2016 版之后微软便将其作为 Excel 的组成部分嵌入在软件当中。</p>
+<p>使用 Excel2010 版和 Excel2013 版的小伙伴可以到微软官网下载。</p>
+<p>Excel Power Query插件下载地址：</p>
+<p><a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-CN/download/details.aspx?id=39379">https://www.microsoft.com/zh-CN/download/details.aspx?id=39379</a></p>
+<p>（建议大家使用 Excel2016 专业版及以上版本，使用起来更稳定，能避免许多软件带来的小Bug）</p>
+<p><img src="http://i1.fuimg.com/700295/d36242bf2108cca3.png" alt="img"></p>
+<p>  Excel Power Query 主要用于获取和转换数据，对不同源的数据进行整理加工。Power Query 的操作对象是<strong>表</strong>，使用 Power Query 能帮助我们提高对<strong>表结构数据</strong>的处理速度，提高办公效率。</p>
+<h2 id="如何进入Excel-Power-Query？"><a href="#如何进入Excel-Power-Query？" class="headerlink" title="如何进入Excel Power Query？"></a>如何进入Excel Power Query？</h2><p>那么如何进入Excel Power Query界面呢？</p>
+<p>下面我们先来看一下Excel2010版和Excel2013版如何加载和进入Excel Power Query平台。</p>
+<ol>
+<li>在官网下载Excel Power Query插件；</li>
+<li>打开Excel COM加载项，勾选Excel Power Query组件；</li>
+</ol>
+<p><img src="http://i1.fuimg.com/700295/3a1f34fe724d960c.png" alt="img"></p>
+<ol start="3">
+<li>任意选中一个空单元格，点击【从表】便可进入Excel Power  Query 界面：</li>
+</ol>
+<p><img src="http://i1.fuimg.com/700295/41125684242246f4.png" alt="img"></p>
+<p>Excel2016专业版及以上版本中，Excel Power Query默认在数据选项卡下的【获取和转换】功能组中，点击【从表格】便可进入Excel Power Query界面：</p>
+<p><img src="http://i2.tiimg.com/700295/0c85ae0a7caa62a9.png" alt="img"></p>
+<p>下面，我们用一个视频来进行演示，一起了解 Excel 中 Power Query 的使用吧。</p>
+<p>视频链接：高效的数据处理神器：Power Query</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
