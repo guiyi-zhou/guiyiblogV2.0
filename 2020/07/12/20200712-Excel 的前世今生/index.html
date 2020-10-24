@@ -1,272 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+{% extends '_layout.swig' %}
+{% import '_macro/post.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-  
-  <title>Excel 的前世今生 | Guiyi&#39;s blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Excel 的前世和今生Excel 的前世世界上第一款电子表格——VisiCalc“数百年来，人们用的都是手写表格，在1978年初，我开始着手实现一个想法，最终这个想法变成了VisiCalc” ——电子表格之父丹·布莱克林在 TED 中如是说道。 1979年，丹 · 布莱克林和鲍伯 · 弗兰克斯顿在苹果Ⅱ型计算机上开发的这款名叫 “VisiCalc” 的商用软件，就是世界上第一款电子表格软件，也就">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Excel 的前世今生">
-<meta property="og:url" content="http://guiyiblog.com/2020/07/12/20200712-Excel%20%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/index.html">
-<meta property="og:site_name" content="Guiyi&#39;s blog">
-<meta property="og:description" content="Excel 的前世和今生Excel 的前世世界上第一款电子表格——VisiCalc“数百年来，人们用的都是手写表格，在1978年初，我开始着手实现一个想法，最终这个想法变成了VisiCalc” ——电子表格之父丹·布莱克林在 TED 中如是说道。 1979年，丹 · 布莱克林和鲍伯 · 弗兰克斯顿在苹果Ⅱ型计算机上开发的这款名叫 “VisiCalc” 的商用软件，就是世界上第一款电子表格软件，也就">
-<meta property="og:locale">
-<meta property="og:image" content="http://i1.fuimg.com/700295/4c36baa5b8fbd736.png">
-<meta property="og:image" content="http://i1.fuimg.com/700295/5731b5b585b3701c.png">
-<meta property="og:image" content="http://i1.fuimg.com/700295/63e3c38c51e89965.png">
-<meta property="og:image" content="http://i1.fuimg.com/700295/bd51a24be6527d91.png">
-<meta property="og:image" content="http://i2.tiimg.com/700295/3caa316c0fbd6f37.jpg">
-<meta property="article:published_time" content="2020-07-11T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-23T16:06:01.084Z">
-<meta property="article:author" content="归一">
-<meta property="article:tag" content="Excel">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://i1.fuimg.com/700295/4c36baa5b8fbd736.png">
-  
-    <link rel="alternate" href="/atom.xml" title="Guiyi&#39;s blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Guiyi&#39;s blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://guiyiblog.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-20200712-Excel 的前世今生" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/12/20200712-Excel%20%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/" class="article-date">
-  <time datetime="2020-07-11T16:00:00.000Z" itemprop="datePublished">2020-07-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Power-BI-%E5%85%A5%E9%97%A8/">Power BI 入门</a>
-  </div>
+{% block page_class %}page-post-detail{% endblock %}
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Excel 的前世今生
-    </h1>
-  
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Excel-的前世和今生"><a href="#Excel-的前世和今生" class="headerlink" title="Excel 的前世和今生"></a>Excel 的前世和今生</h1><h2 id="Excel-的前世"><a href="#Excel-的前世" class="headerlink" title="Excel 的前世"></a>Excel 的前世</h2><h3 id="世界上第一款电子表格——VisiCalc"><a href="#世界上第一款电子表格——VisiCalc" class="headerlink" title="世界上第一款电子表格——VisiCalc"></a>世界上第一款电子表格——VisiCalc</h3><p>“数百年来，人们用的都是手写表格，在1978年初，我开始着手实现一个想法，最终这个想法变成了VisiCalc” ——电子表格之父丹·布莱克林在 TED 中如是说道。</p>
-<p>1979年，丹 · 布莱克林和鲍伯 · 弗兰克斯顿在苹果Ⅱ型计算机上开发的这款名叫 “VisiCalc” 的商用软件，就是世界上第一款电子表格软件，也就是Excel的前世。</p>
-<p>下面是丹 · 布莱克林在TED中演讲的视频链接：</p>
-<p><img src="http://i1.fuimg.com/700295/4c36baa5b8fbd736.png" alt="img"></p>
-<p><a target="_blank" rel="noopener" href="http://open.163.com/movie/2017/1/T/G/MC9LKD9TM_MCAHC7VTG.html">http://open.163.com/movie/2017/1/T/G/MC9LKD9TM_MCAHC7VTG.html</a></p>
-<p>在那个时代，尽管已经有了一些数据计算程序，不过均应用于一些企业的大型计算机上，VisiCalc 的出现，成功的帮助个人电脑走上了商业办公桌，在当时许多用户购买个人计算机的主要目的是运行 VisiCalc，几乎是电子表格 VisiCalc 单枪匹马将 PC 从业余爱好者手中的玩具变成了炙手可热的商业工具，独立地改变了 PC 业的发展方向。而且还把 Apple 推到了 PC 厂商头把交椅上。</p>
-<p>虽然，由于当时没有版权专利的概念，没能使得丹 · 布莱克林因 VisiCalc 而变得富有，但是，他却用 VisiCalc改变了整个 PC 产业，改变了整个世界。</p>
-<h3 id="电子表格的第一个成功者——Lotus-1-2-3"><a href="#电子表格的第一个成功者——Lotus-1-2-3" class="headerlink" title="电子表格的第一个成功者——Lotus 1-2-3"></a>电子表格的第一个成功者——Lotus 1-2-3</h3><p><img src="http://i1.fuimg.com/700295/5731b5b585b3701c.png" alt="img"></p>
-<p>随着 VisiCalc 的出现，使得电子表格软件迅速风行起来，商业活动中不断新生的数据处理需求也成为他们持续改进的动力源泉。继 VisiCalc 之后的另一个电子表格软件的成功之作就是 Lotus 公司的 Lotus 1-2-3。</p>
-<p>1983年1月 Lotus 1-2-3 正式发布，并且凭借着它集表格、数据库、商业绘图于一身的强大功能很快获得了成功，销量很快超过 VisiCalc。</p>
-<p> 但由于 Lotus 的决策者的误判，在微软发布 Windows 后，对其并不看好，放慢了它的第一个 Windows 电子表格程序的研发，从而错失机遇。 随着微软公司 Excel 的出现，Lotus 1-2-3 就渐显倪端，不再那么吸引人了。特别是微软公司推出 Excel 5.0以后，Lotus 公司在与微软公司在电子表格产品的竞争中，就已处于下风。到了微软公司推出 Excel 7.0 以后，Lotus 1-2-3 终于承认兵败，除了少数忠实（顽固）的老用户以外，大部分市场都被微软夺走了。 </p>
-<h2 id="Excel的今生——Excel-Power-BI"><a href="#Excel的今生——Excel-Power-BI" class="headerlink" title="Excel的今生——Excel Power BI"></a>Excel的今生——Excel Power BI</h2><p>Excel 是美国微软公司研发的一款电子表格，从1985年的 Excel 1.0版到现在的 Excel 2019版已经发展将近年40年的时间。如今，Excel 已经成为事实上的电子表格行业标准，无论是在科学研究、医疗教育、商业活动还是在家庭生活中，Excel 都能满足大多数人的数据处理需求。</p>
-<p><strong>最早的Excel版本：</strong></p>
-<p><img src="http://i1.fuimg.com/700295/63e3c38c51e89965.png" alt="img"></p>
-<p><strong>最新的Excel版本：</strong></p>
-<p><img src="http://i1.fuimg.com/700295/bd51a24be6527d91.png" alt="img"></p>
-<h3 id="Excel-的发展现状"><a href="#Excel-的发展现状" class="headerlink" title="Excel 的发展现状"></a>Excel 的发展现状</h3><p>随着大数据和人工智能的发展，人类进入的 DT 时代，在信息爆炸，数据量急速增加的今天，Excel 现已成为目前市面上使用最广的数据分析工具，帮助我们从数据中发现见解，找出有价值的信息。<strong>在2016版及其以后的版本中，Excel 已经嵌入了迎合大数据的一整套BI插件，包括Power Query数据获取与整理，Power Pivot 数据建模与分析，不仅让Excel 从小数据到大数据发展到了后Excel 时代，也让它可以更加智能化的进行商业分析。</strong></p>
-<p>最后，我们用一张图来看一下目前 微软 Power BI 在商业智能分析中的地位是怎样的:</p>
-<p><img src="http://i2.tiimg.com/700295/3caa316c0fbd6f37.jpg" alt="img"></p>
-<p> Gartner 连续 12 年将 Microsoft 评为分析和商业智能平台的魔力象限领导者。 </p>
+{% block content %}
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://guiyiblog.com/2020/07/12/20200712-Excel%20%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/" data-id="ckgnblh9d000fqov628klaj1u" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Excel/" rel="tag">Excel</a></li></ul>
+  <div id="posts" class="posts-expand">
+    {{ post_template.render(page) }}
 
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2020/07/13/20200713-Excel%20%E4%BB%8E%E5%8C%BA%E5%9F%9F%E5%88%B0%E8%A1%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Excel 从区域到表
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2020/07/10/20200710-NPS%20%E7%94%A8%E6%88%B7%E5%87%80%E6%8E%A8%E8%8D%90%E5%88%86%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">NPS用户净推荐分析</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Power-BI-%E5%85%A5%E9%97%A8/">Power BI 入门</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E8%AE%BA/">数据分析方法论</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%8C%96%E7%AE%A1%E7%90%86%EF%BC%9A%E6%B4%9E%E6%82%89%E9%9B%B6%E5%94%AE%E5%8F%8A%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E8%BF%90%E8%90%A5/">数据化管理：洞悉零售及电子商务运营</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/">统计学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E6%80%9D%E7%BB%B4/">统计学思维</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/">统计学知识体系</a></li></ul>
+    <div class="post-spread">
+      {% if theme.jiathis %}
+        {% include '_partials/share/jiathis.swig' %}
+      {% elseif theme.baidushare %}
+        {% include '_partials/share/baidushare.swig' %}
+      {% elseif theme.add_this_id %}
+        {% include '_partials/share/add-this.swig' %}
+      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
+        {% include '_partials/share/duoshuo_share.swig' %}
+      {% endif %}
     </div>
   </div>
 
+{% endblock %}
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Excel/" rel="tag">Excel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NPS/" rel="tag">NPS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Power-Query/" rel="tag">Power Query</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/" rel="tag">方法论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%A8%E6%88%B7%E5%88%86%E6%9E%90/" rel="tag">用户分析</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%B5%E5%95%86%E9%9B%B6%E5%94%AE/" rel="tag">电商零售</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" rel="tag">统计学</a></li></ul>
-    </div>
-  </div>
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Excel/" style="font-size: 20px;">Excel</a> <a href="/tags/NPS/" style="font-size: 10px;">NPS</a> <a href="/tags/Power-Query/" style="font-size: 10px;">Power Query</a> <a href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/" style="font-size: 10px;">方法论</a> <a href="/tags/%E7%94%A8%E6%88%B7%E5%88%86%E6%9E%90/" style="font-size: 10px;">用户分析</a> <a href="/tags/%E7%94%B5%E5%95%86%E9%9B%B6%E5%94%AE/" style="font-size: 10px;">电商零售</a> <a href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" style="font-size: 15px;">统计学</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/10/24/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/14/20200714-%E9%AB%98%E6%95%88%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%A5%9E%E5%99%A8%EF%BC%9APower%20Query/">高效的数据处理神器：Power Query</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/13/20200713-Excel%20%E4%BB%8E%E5%8C%BA%E5%9F%9F%E5%88%B0%E8%A1%A8/">Excel 从区域到表</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/12/20200712-Excel%20%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/">Excel 的前世今生</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/10/20200710-NPS%20%E7%94%A8%E6%88%B7%E5%87%80%E6%8E%A8%E8%8D%90%E5%88%86%E6%9E%90/">NPS用户净推荐分析</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 归一<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+{% block script_extra %}
+  {% include '_scripts/pages/post-details.swig' %}
+{% endblock %}
