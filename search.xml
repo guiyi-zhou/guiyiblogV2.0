@@ -394,6 +394,37 @@
       </tags>
   </entry>
   <entry>
+    <title>Excel 的前世今生</title>
+    <url>/2020/07/12/20200712-Excel%20%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/</url>
+    <content><![CDATA[<h1 id="Excel-的前世和今生"><a href="#Excel-的前世和今生" class="headerlink" title="Excel 的前世和今生"></a>Excel 的前世和今生</h1><h2 id="Excel-的前世"><a href="#Excel-的前世" class="headerlink" title="Excel 的前世"></a>Excel 的前世</h2><h3 id="世界上第一款电子表格——VisiCalc"><a href="#世界上第一款电子表格——VisiCalc" class="headerlink" title="世界上第一款电子表格——VisiCalc"></a>世界上第一款电子表格——VisiCalc</h3><p>“数百年来，人们用的都是手写表格，在1978年初，我开始着手实现一个想法，最终这个想法变成了VisiCalc” ——电子表格之父丹·布莱克林在 TED 中如是说道。</p>
+<p>1979年，丹 · 布莱克林和鲍伯 · 弗兰克斯顿在苹果Ⅱ型计算机上开发的这款名叫 “VisiCalc” 的商用软件，就是世界上第一款电子表格软件，也就是Excel的前世。</p>
+<p>下面是丹 · 布莱克林在TED中演讲的视频链接：</p>
+<p><img src="http://i1.fuimg.com/700295/4c36baa5b8fbd736.png" alt="img"></p>
+<p><a href="http://open.163.com/movie/2017/1/T/G/MC9LKD9TM_MCAHC7VTG.html">http://open.163.com/movie/2017/1/T/G/MC9LKD9TM_MCAHC7VTG.html</a></p>
+<p>在那个时代，尽管已经有了一些数据计算程序，不过均应用于一些企业的大型计算机上，VisiCalc 的出现，成功的帮助个人电脑走上了商业办公桌，在当时许多用户购买个人计算机的主要目的是运行 VisiCalc，几乎是电子表格 VisiCalc 单枪匹马将 PC 从业余爱好者手中的玩具变成了炙手可热的商业工具，独立地改变了 PC 业的发展方向。而且还把 Apple 推到了 PC 厂商头把交椅上。</p>
+<p>虽然，由于当时没有版权专利的概念，没能使得丹 · 布莱克林因 VisiCalc 而变得富有，但是，他却用 VisiCalc改变了整个 PC 产业，改变了整个世界。</p>
+<h3 id="电子表格的第一个成功者——Lotus-1-2-3"><a href="#电子表格的第一个成功者——Lotus-1-2-3" class="headerlink" title="电子表格的第一个成功者——Lotus 1-2-3"></a>电子表格的第一个成功者——Lotus 1-2-3</h3><p><img src="http://i1.fuimg.com/700295/5731b5b585b3701c.png" alt="img"></p>
+<p>随着 VisiCalc 的出现，使得电子表格软件迅速风行起来，商业活动中不断新生的数据处理需求也成为他们持续改进的动力源泉。继 VisiCalc 之后的另一个电子表格软件的成功之作就是 Lotus 公司的 Lotus 1-2-3。</p>
+<p>1983年1月 Lotus 1-2-3 正式发布，并且凭借着它集表格、数据库、商业绘图于一身的强大功能很快获得了成功，销量很快超过 VisiCalc。</p>
+<p> 但由于 Lotus 的决策者的误判，在微软发布 Windows 后，对其并不看好，放慢了它的第一个 Windows 电子表格程序的研发，从而错失机遇。 随着微软公司 Excel 的出现，Lotus 1-2-3 就渐显倪端，不再那么吸引人了。特别是微软公司推出 Excel 5.0以后，Lotus 公司在与微软公司在电子表格产品的竞争中，就已处于下风。到了微软公司推出 Excel 7.0 以后，Lotus 1-2-3 终于承认兵败，除了少数忠实（顽固）的老用户以外，大部分市场都被微软夺走了。 </p>
+<h2 id="Excel的今生——Excel-Power-BI"><a href="#Excel的今生——Excel-Power-BI" class="headerlink" title="Excel的今生——Excel Power BI"></a>Excel的今生——Excel Power BI</h2><p>Excel 是美国微软公司研发的一款电子表格，从1985年的 Excel 1.0版到现在的 Excel 2019版已经发展将近年40年的时间。如今，Excel 已经成为事实上的电子表格行业标准，无论是在科学研究、医疗教育、商业活动还是在家庭生活中，Excel 都能满足大多数人的数据处理需求。</p>
+<p><strong>最早的Excel版本：</strong></p>
+<p><img src="http://i1.fuimg.com/700295/63e3c38c51e89965.png" alt="img"></p>
+<p><strong>最新的Excel版本：</strong></p>
+<p><img src="http://i1.fuimg.com/700295/bd51a24be6527d91.png" alt="img"></p>
+<h3 id="Excel-的发展现状"><a href="#Excel-的发展现状" class="headerlink" title="Excel 的发展现状"></a>Excel 的发展现状</h3><p>随着大数据和人工智能的发展，人类进入的 DT 时代，在信息爆炸，数据量急速增加的今天，Excel 现已成为目前市面上使用最广的数据分析工具，帮助我们从数据中发现见解，找出有价值的信息。<strong>在2016版及其以后的版本中，Excel 已经嵌入了迎合大数据的一整套BI插件，包括Power Query数据获取与整理，Power Pivot 数据建模与分析，不仅让Excel 从小数据到大数据发展到了后Excel 时代，也让它可以更加智能化的进行商业分析。</strong></p>
+<p>最后，我们用一张图来看一下目前 微软 Power BI 在商业智能分析中的地位是怎样的:</p>
+<p><img src="http://i2.tiimg.com/700295/3caa316c0fbd6f37.jpg" alt="img"></p>
+<p> Gartner 连续 12 年将 Microsoft 评为分析和商业智能平台的魔力象限领导者。 </p>
+]]></content>
+      <categories>
+        <category>Power BI 入门</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Excel 从区域到表</title>
     <url>/2020/07/13/20200713-Excel%20%E4%BB%8E%E5%8C%BA%E5%9F%9F%E5%88%B0%E8%A1%A8/</url>
     <content><![CDATA[<h1 id="Excel-从区域到表"><a href="#Excel-从区域到表" class="headerlink" title="Excel 从区域到表"></a>Excel 从区域到表</h1><h2 id="单元格和区域"><a href="#单元格和区域" class="headerlink" title="单元格和区域"></a>单元格和区域</h2><p><strong>单元格</strong>是Excel中构成工作表的最基础组成元素，也是Excel中的最小操作对象。多个单元格组成的群组则就称为<strong>区域</strong>。</p>
@@ -419,37 +450,6 @@
 <li><strong>让软件更加智能：一键刷新，更新结果。</strong></li>
 </ol>
 <p>视频链接：《 Power BI 入门：从区域到表 》</p>
-]]></content>
-      <categories>
-        <category>Power BI 入门</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Excel 的前世今生</title>
-    <url>/2020/07/12/20200712-Excel%20%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/</url>
-    <content><![CDATA[<h1 id="Excel-的前世和今生"><a href="#Excel-的前世和今生" class="headerlink" title="Excel 的前世和今生"></a>Excel 的前世和今生</h1><h2 id="Excel-的前世"><a href="#Excel-的前世" class="headerlink" title="Excel 的前世"></a>Excel 的前世</h2><h3 id="世界上第一款电子表格——VisiCalc"><a href="#世界上第一款电子表格——VisiCalc" class="headerlink" title="世界上第一款电子表格——VisiCalc"></a>世界上第一款电子表格——VisiCalc</h3><p>“数百年来，人们用的都是手写表格，在1978年初，我开始着手实现一个想法，最终这个想法变成了VisiCalc” ——电子表格之父丹·布莱克林在 TED 中如是说道。</p>
-<p>1979年，丹 · 布莱克林和鲍伯 · 弗兰克斯顿在苹果Ⅱ型计算机上开发的这款名叫 “VisiCalc” 的商用软件，就是世界上第一款电子表格软件，也就是Excel的前世。</p>
-<p>下面是丹 · 布莱克林在TED中演讲的视频链接：</p>
-<p><img src="http://i1.fuimg.com/700295/4c36baa5b8fbd736.png" alt="img"></p>
-<p><a href="http://open.163.com/movie/2017/1/T/G/MC9LKD9TM_MCAHC7VTG.html">http://open.163.com/movie/2017/1/T/G/MC9LKD9TM_MCAHC7VTG.html</a></p>
-<p>在那个时代，尽管已经有了一些数据计算程序，不过均应用于一些企业的大型计算机上，VisiCalc 的出现，成功的帮助个人电脑走上了商业办公桌，在当时许多用户购买个人计算机的主要目的是运行 VisiCalc，几乎是电子表格 VisiCalc 单枪匹马将 PC 从业余爱好者手中的玩具变成了炙手可热的商业工具，独立地改变了 PC 业的发展方向。而且还把 Apple 推到了 PC 厂商头把交椅上。</p>
-<p>虽然，由于当时没有版权专利的概念，没能使得丹 · 布莱克林因 VisiCalc 而变得富有，但是，他却用 VisiCalc改变了整个 PC 产业，改变了整个世界。</p>
-<h3 id="电子表格的第一个成功者——Lotus-1-2-3"><a href="#电子表格的第一个成功者——Lotus-1-2-3" class="headerlink" title="电子表格的第一个成功者——Lotus 1-2-3"></a>电子表格的第一个成功者——Lotus 1-2-3</h3><p><img src="http://i1.fuimg.com/700295/5731b5b585b3701c.png" alt="img"></p>
-<p>随着 VisiCalc 的出现，使得电子表格软件迅速风行起来，商业活动中不断新生的数据处理需求也成为他们持续改进的动力源泉。继 VisiCalc 之后的另一个电子表格软件的成功之作就是 Lotus 公司的 Lotus 1-2-3。</p>
-<p>1983年1月 Lotus 1-2-3 正式发布，并且凭借着它集表格、数据库、商业绘图于一身的强大功能很快获得了成功，销量很快超过 VisiCalc。</p>
-<p> 但由于 Lotus 的决策者的误判，在微软发布 Windows 后，对其并不看好，放慢了它的第一个 Windows 电子表格程序的研发，从而错失机遇。 随着微软公司 Excel 的出现，Lotus 1-2-3 就渐显倪端，不再那么吸引人了。特别是微软公司推出 Excel 5.0以后，Lotus 公司在与微软公司在电子表格产品的竞争中，就已处于下风。到了微软公司推出 Excel 7.0 以后，Lotus 1-2-3 终于承认兵败，除了少数忠实（顽固）的老用户以外，大部分市场都被微软夺走了。 </p>
-<h2 id="Excel的今生——Excel-Power-BI"><a href="#Excel的今生——Excel-Power-BI" class="headerlink" title="Excel的今生——Excel Power BI"></a>Excel的今生——Excel Power BI</h2><p>Excel 是美国微软公司研发的一款电子表格，从1985年的 Excel 1.0版到现在的 Excel 2019版已经发展将近年40年的时间。如今，Excel 已经成为事实上的电子表格行业标准，无论是在科学研究、医疗教育、商业活动还是在家庭生活中，Excel 都能满足大多数人的数据处理需求。</p>
-<p><strong>最早的Excel版本：</strong></p>
-<p><img src="http://i1.fuimg.com/700295/63e3c38c51e89965.png" alt="img"></p>
-<p><strong>最新的Excel版本：</strong></p>
-<p><img src="http://i1.fuimg.com/700295/bd51a24be6527d91.png" alt="img"></p>
-<h3 id="Excel-的发展现状"><a href="#Excel-的发展现状" class="headerlink" title="Excel 的发展现状"></a>Excel 的发展现状</h3><p>随着大数据和人工智能的发展，人类进入的 DT 时代，在信息爆炸，数据量急速增加的今天，Excel 现已成为目前市面上使用最广的数据分析工具，帮助我们从数据中发现见解，找出有价值的信息。<strong>在2016版及其以后的版本中，Excel 已经嵌入了迎合大数据的一整套BI插件，包括Power Query数据获取与整理，Power Pivot 数据建模与分析，不仅让Excel 从小数据到大数据发展到了后Excel 时代，也让它可以更加智能化的进行商业分析。</strong></p>
-<p>最后，我们用一张图来看一下目前 微软 Power BI 在商业智能分析中的地位是怎样的:</p>
-<p><img src="http://i2.tiimg.com/700295/3caa316c0fbd6f37.jpg" alt="img"></p>
-<p> Gartner 连续 12 年将 Microsoft 评为分析和商业智能平台的魔力象限领导者。 </p>
 ]]></content>
       <categories>
         <category>Power BI 入门</category>
