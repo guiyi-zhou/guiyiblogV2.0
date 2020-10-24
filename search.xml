@@ -425,40 +425,6 @@
       </tags>
   </entry>
   <entry>
-    <title>高效的数据处理神器：Power Query</title>
-    <url>/2020/07/14/20200714-%E9%AB%98%E6%95%88%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%A5%9E%E5%99%A8%EF%BC%9APower%20Query/</url>
-    <content><![CDATA[<h1 id="高效的数据处理神器：Power-Query"><a href="#高效的数据处理神器：Power-Query" class="headerlink" title="高效的数据处理神器：Power Query"></a>高效的数据处理神器：Power Query</h1><h2 id="什么是Excel-Power-Query？"><a href="#什么是Excel-Power-Query？" class="headerlink" title="什么是Excel Power Query？"></a>什么是Excel Power Query？</h2><p>Excel Power Query 是Excel 用于数据分析的三大组件之一，其它两个分别是Excel Power Pivot 和 Excel Power View。在微软Excel2010 版和 Excel2013 版中作为插件使用，需要在官网进行下载，直到Excel 2016 版之后微软便将其作为 Excel 的组成部分嵌入在软件当中。</p>
-<p>使用 Excel2010 版和 Excel2013 版的小伙伴可以到微软官网下载。</p>
-<p>Excel Power Query插件下载地址：</p>
-<p><a href="https://www.microsoft.com/zh-CN/download/details.aspx?id=39379">https://www.microsoft.com/zh-CN/download/details.aspx?id=39379</a></p>
-<p>（建议大家使用 Excel2016 专业版及以上版本，使用起来更稳定，能避免许多软件带来的小Bug）</p>
-<p><img src="http://i1.fuimg.com/700295/d36242bf2108cca3.png" alt="img"></p>
-<p>  Excel Power Query 主要用于获取和转换数据，对不同源的数据进行整理加工。Power Query 的操作对象是<strong>表</strong>，使用 Power Query 能帮助我们提高对<strong>表结构数据</strong>的处理速度，提高办公效率。</p>
-<h2 id="如何进入Excel-Power-Query？"><a href="#如何进入Excel-Power-Query？" class="headerlink" title="如何进入Excel Power Query？"></a>如何进入Excel Power Query？</h2><p>那么如何进入Excel Power Query界面呢？</p>
-<p>下面我们先来看一下Excel2010版和Excel2013版如何加载和进入Excel Power Query平台。</p>
-<ol>
-<li>在官网下载Excel Power Query插件；</li>
-<li>打开Excel COM加载项，勾选Excel Power Query组件；</li>
-</ol>
-<p><img src="http://i1.fuimg.com/700295/3a1f34fe724d960c.png" alt="img"></p>
-<ol start="3">
-<li>任意选中一个空单元格，点击【从表】便可进入Excel Power  Query 界面：</li>
-</ol>
-<p><img src="http://i1.fuimg.com/700295/41125684242246f4.png" alt="img"></p>
-<p>Excel2016专业版及以上版本中，Excel Power Query默认在数据选项卡下的【获取和转换】功能组中，点击【从表格】便可进入Excel Power Query界面：</p>
-<p><img src="http://i2.tiimg.com/700295/0c85ae0a7caa62a9.png" alt="img"></p>
-<p>下面，我们用一个视频来进行演示，一起了解 Excel 中 Power Query 的使用吧。</p>
-<p>视频链接：高效的数据处理神器：Power Query</p>
-]]></content>
-      <categories>
-        <category>Power BI 入门</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-        <tag>Power Query</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Excel 从区域到表</title>
     <url>/2020/07/13/20200713-Excel%20%E4%BB%8E%E5%8C%BA%E5%9F%9F%E5%88%B0%E8%A1%A8/</url>
     <content><![CDATA[<h1 id="Excel-从区域到表"><a href="#Excel-从区域到表" class="headerlink" title="Excel 从区域到表"></a>Excel 从区域到表</h1><h2 id="单元格和区域"><a href="#单元格和区域" class="headerlink" title="单元格和区域"></a>单元格和区域</h2><p><strong>单元格</strong>是Excel中构成工作表的最基础组成元素，也是Excel中的最小操作对象。多个单元格组成的群组则就称为<strong>区域</strong>。</p>
@@ -490,6 +456,40 @@
       </categories>
       <tags>
         <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高效的数据处理神器：Power Query</title>
+    <url>/2020/07/14/20200714-%E9%AB%98%E6%95%88%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%A5%9E%E5%99%A8%EF%BC%9APower%20Query/</url>
+    <content><![CDATA[<h1 id="高效的数据处理神器：Power-Query"><a href="#高效的数据处理神器：Power-Query" class="headerlink" title="高效的数据处理神器：Power Query"></a>高效的数据处理神器：Power Query</h1><h2 id="什么是Excel-Power-Query？"><a href="#什么是Excel-Power-Query？" class="headerlink" title="什么是Excel Power Query？"></a>什么是Excel Power Query？</h2><p>Excel Power Query 是Excel 用于数据分析的三大组件之一，其它两个分别是Excel Power Pivot 和 Excel Power View。在微软Excel2010 版和 Excel2013 版中作为插件使用，需要在官网进行下载，直到Excel 2016 版之后微软便将其作为 Excel 的组成部分嵌入在软件当中。</p>
+<p>使用 Excel2010 版和 Excel2013 版的小伙伴可以到微软官网下载。</p>
+<p>Excel Power Query插件下载地址：</p>
+<p><a href="https://www.microsoft.com/zh-CN/download/details.aspx?id=39379">https://www.microsoft.com/zh-CN/download/details.aspx?id=39379</a></p>
+<p>（建议大家使用 Excel2016 专业版及以上版本，使用起来更稳定，能避免许多软件带来的小Bug）</p>
+<p><img src="http://i1.fuimg.com/700295/d36242bf2108cca3.png" alt="img"></p>
+<p>  Excel Power Query 主要用于获取和转换数据，对不同源的数据进行整理加工。Power Query 的操作对象是<strong>表</strong>，使用 Power Query 能帮助我们提高对<strong>表结构数据</strong>的处理速度，提高办公效率。</p>
+<h2 id="如何进入Excel-Power-Query？"><a href="#如何进入Excel-Power-Query？" class="headerlink" title="如何进入Excel Power Query？"></a>如何进入Excel Power Query？</h2><p>那么如何进入Excel Power Query界面呢？</p>
+<p>下面我们先来看一下Excel2010版和Excel2013版如何加载和进入Excel Power Query平台。</p>
+<ol>
+<li>在官网下载Excel Power Query插件；</li>
+<li>打开Excel COM加载项，勾选Excel Power Query组件；</li>
+</ol>
+<p><img src="http://i1.fuimg.com/700295/3a1f34fe724d960c.png" alt="img"></p>
+<ol start="3">
+<li>任意选中一个空单元格，点击【从表】便可进入Excel Power  Query 界面：</li>
+</ol>
+<p><img src="http://i1.fuimg.com/700295/41125684242246f4.png" alt="img"></p>
+<p>Excel2016专业版及以上版本中，Excel Power Query默认在数据选项卡下的【获取和转换】功能组中，点击【从表格】便可进入Excel Power Query界面：</p>
+<p><img src="http://i2.tiimg.com/700295/0c85ae0a7caa62a9.png" alt="img"></p>
+<p>下面，我们用一个视频来进行演示，一起了解 Excel 中 Power Query 的使用吧。</p>
+<p>视频链接：高效的数据处理神器：Power Query</p>
+]]></content>
+      <categories>
+        <category>Power BI 入门</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
+        <tag>Power Query</tag>
       </tags>
   </entry>
   <entry>
