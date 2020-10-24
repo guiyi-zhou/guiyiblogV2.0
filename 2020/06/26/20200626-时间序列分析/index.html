@@ -1,69 +1,127 @@
-
 <!DOCTYPE html>
-<html lang="zh-Hans" class="loading">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>时间序列分析 - Guiyi&#39;s blog</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="在理性的基础上，一切判断都是统计学。,时间序列分析简介什么是时间序列？按照时间顺序把一个随机事件发展的过程记录下来就构成了一个时间序列。
-什么是时间序列分析？对时间序列进行观察、研究，找寻它变化发展的规律，预测它将来的走势，就是时间序列,"> 
-    <meta name="author" content="归一"> 
-    <link rel="alternative" href="atom.xml" title="Guiyi&#39;s blog" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
-    
-    
-<link rel="stylesheet" href="/css/diaspora.css">
+  <meta charset="utf-8">
+  
 
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-8691406134231910",
-              enable_page_level_ads: true
-         });
-    </script>
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-    </script>
+  
+  <title>时间序列分析 | Guiyi&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="时间序列分析简介什么是时间序列？按照时间顺序把一个随机事件发展的过程记录下来就构成了一个时间序列。 什么是时间序列分析？对时间序列进行观察、研究，找寻它变化发展的规律，预测它将来的走势，就是时间序列分析。 时间序列的统计定义随机序列随机序列：按时间顺序排列的一组随机变量。 $ …, X_1, X_2, …, X_t, …$ 观察值序列观察值序列：随机序列的 $ n$ 个有序观察值，称之为序列长度为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="时间序列分析">
+<meta property="og:url" content="http://guiyiblog.com/2020/06/26/20200626-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90/index.html">
+<meta property="og:site_name" content="Guiyi&#39;s blog">
+<meta property="og:description" content="时间序列分析简介什么是时间序列？按照时间顺序把一个随机事件发展的过程记录下来就构成了一个时间序列。 什么是时间序列分析？对时间序列进行观察、研究，找寻它变化发展的规律，预测它将来的走势，就是时间序列分析。 时间序列的统计定义随机序列随机序列：按时间顺序排列的一组随机变量。 $ …, X_1, X_2, …, X_t, …$ 观察值序列观察值序列：随机序列的 $ n$ 个有序观察值，称之为序列长度为">
+<meta property="og:locale">
+<meta property="og:image" content="http://i2.tiimg.com/700295/5f403a4f8d2e87c6.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/d949dcb0823cc2a8.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/5b5a65e2362a8555.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/9aca8ed39013ef1e.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/f918ffd5697946e5.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/574293013474da68.jpg">
+<meta property="og:image" content="http://i2.tiimg.com/700295/b3b4c3bec38d9658.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/557ac0b224e6ab93.png">
+<meta property="og:image" content="http://i1.fuimg.com/700295/c0f3aacf5516a9a3.jpg">
+<meta property="og:image" content="http://i2.tiimg.com/700295/0efbeed74335f1c5.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/ee8e49a55e1aa74c.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/1e88497558d7410d.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/5fa2610794f345a2.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/5fb3bf58952ea251.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/0bf6442a5be2ce03.png">
+<meta property="og:image" content="http://i1.fuimg.com/700295/51472daf5129c1bb.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/59067e9ab62d7551.png">
+<meta property="og:image" content="http://i1.fuimg.com/700295/04eed007fbb2fc85.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/c2fb47a9871286e2.png">
+<meta property="og:image" content="http://i1.fuimg.com/700295/ac7f99c8824d2ca7.png">
+<meta property="og:image" content="http://i1.fuimg.com/700295/9e78db286a5b200d.png">
+<meta property="og:image" content="http://i1.fuimg.com/700295/88bb5c59a42c35b3.png">
+<meta property="og:image" content="c:/Users/EDZ/AppData/Roaming/Typora/typora-user-images/image-20200706131817503.png">
+<meta property="og:image" content="http://i2.tiimg.com/700295/023d6ad7a308db6d.png">
+<meta property="og:image" content="http://i1.fuimg.com/700295/b5160561850449ea.png">
+<meta property="og:image" content="c:/Users/EDZ/AppData/Roaming/Typora/typora-user-images/image-20200706150350359.png">
+<meta property="og:image" content="http://i1.fuimg.com/700295/cfe7deb11e68c9f0.png">
+<meta property="article:published_time" content="2020-06-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-10-23T16:06:01.324Z">
+<meta property="article:author" content="归一">
+<meta property="article:tag" content="统计学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://i2.tiimg.com/700295/5f403a4f8d2e87c6.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Guiyi&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
 <meta name="generator" content="Hexo 5.2.0"></head>
 
-<body class="loading">
-    <span id="config-title" style="display:none">Guiyi&#39;s blog</span>
-    <div id="loader"></div>
-    <div id="single">
-    <div id="top" style="display: block;">
-    <div class="bar" style="width: 0;"></div>
-    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://guiyiblog.com"></a>
-    <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">时间序列分析</h3>
-    <div class="social">
-        <div>
-            <div class="share">
-                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
-            </div>
-            <div id="qr"></div>
-        </div>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Guiyi&#39;s blog</a>
+      </h1>
+      
     </div>
-    <div class="scrollbar"></div>
-</div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://guiyiblog.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20200626-时间序列分析" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/26/20200626-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90/" class="article-date">
+  <time datetime="2020-06-25T16:00:00.000Z" itemprop="datePublished">2020-06-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/">统计学知识体系</a>
+  </div>
 
-    <div class="section">
-        <div class="article">
-    <div class='main'>
-        <h1 class="title">时间序列分析</h1>
-        <div class="stuff">
-            <span>六月 26, 2020</span>
-            
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" rel="tag">统计学</a></li></ul>
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      时间序列分析
+    </h1>
+  
 
-
-        </div>
-        <div class="content markdown">
-            <h1 id="时间序列分析简介"><a href="#时间序列分析简介" class="headerlink" title="时间序列分析简介"></a>时间序列分析简介</h1><h2 id="什么是时间序列？"><a href="#什么是时间序列？" class="headerlink" title="什么是时间序列？"></a>什么是时间序列？</h2><p>按照时间顺序把一个随机事件发展的过程记录下来就构成了一个时间序列。</p>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="时间序列分析简介"><a href="#时间序列分析简介" class="headerlink" title="时间序列分析简介"></a>时间序列分析简介</h1><h2 id="什么是时间序列？"><a href="#什么是时间序列？" class="headerlink" title="什么是时间序列？"></a>什么是时间序列？</h2><p>按照时间顺序把一个随机事件发展的过程记录下来就构成了一个时间序列。</p>
 <h2 id="什么是时间序列分析？"><a href="#什么是时间序列分析？" class="headerlink" title="什么是时间序列分析？"></a>什么是时间序列分析？</h2><p>对时间序列进行观察、研究，找寻它变化发展的规律，预测它将来的走势，就是时间序列分析。</p>
 <h2 id="时间序列的统计定义"><a href="#时间序列的统计定义" class="headerlink" title="时间序列的统计定义"></a>时间序列的统计定义</h2><h3 id="随机序列"><a href="#随机序列" class="headerlink" title="随机序列"></a>随机序列</h3><p>随机序列：按时间顺序排列的一组随机变量。</p>
 <p>$ …, X_1, X_2, …, X_t, …$</p>
@@ -318,131 +376,153 @@
 <h4 id="差分平稳"><a href="#差分平稳" class="headerlink" title="差分平稳"></a>差分平稳</h4><p><img src="C:\Users\EDZ\AppData\Roaming\Typora\typora-user-images\image-20200706150350359.png"></p>
 <h3 id="乘积季节模型"><a href="#乘积季节模型" class="headerlink" title="乘积季节模型"></a>乘积季节模型</h3><p><img src="http://i1.fuimg.com/700295/cfe7deb11e68c9f0.png"></p>
 
-            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
-                <source type="audio/mpeg" src="">
-            </audio>
-            
-                <ul id="audio-list" style="display:none">
-                    
-                        
-                            <li title='0' data-url='http://www.0dutv.com/plug/down/up2.php/203452364.mp3'></li>
-                        
-                    
-                </ul>
-            
-        </div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://guiyiblog.com/2020/06/26/20200626-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90/" data-id="ckgnqvlex001kfsv66hbo3hns" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" rel="tag">统计学</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/06/28/20200628-Excel%20Dashboards%20and%20Reports%20-%20Part%201/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-    <div id='gitalk-container' class="comment link"
-		data-enable='false'
-        data-ae='true'
-        data-ci=''
-        data-cs=''
-        data-r=''
-        data-o=''
-        data-a=''
-        data-d='false'
-    >查看评论</div>
+          Excel Dashboards and Reports：Part 1
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/06/13/20200614-%E5%88%A9%E7%94%A8%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E5%88%A4%E6%96%AD%E5%A5%B9%E7%88%B1%E4%B8%8D%E7%88%B1%E4%BD%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">利用假设检验判断她爱不爱你？</div>
+    </a>
+  
+</nav>
 
+  
+</article>
 
-    </div>
+</section>
+        
+          <aside id="sidebar">
+  
     
-        <div class='side'>
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">时间序列分析简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是时间序列？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">什么是时间序列分析？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%AE%9A%E4%B9%89"><span class="toc-number">1.3.</span> <span class="toc-text">时间序列的统计定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E5%BA%8F%E5%88%97"><span class="toc-number">1.3.1.</span> <span class="toc-text">随机序列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%82%E5%AF%9F%E5%80%BC%E5%BA%8F%E5%88%97"><span class="toc-number">1.3.2.</span> <span class="toc-text">观察值序列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E5%BA%8F%E5%88%97%E5%92%8C%E8%A7%82%E5%AF%9F%E5%80%BC%E5%BA%8F%E5%88%97%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.3.3.</span> <span class="toc-text">随机序列和观察值序列的关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text">时间序列分析方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%8F%E8%BF%B0%E6%97%B6%E5%BA%8F%E5%88%86%E6%9E%90"><span class="toc-number">1.4.1.</span> <span class="toc-text">描述时序分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E5%AD%A6%E6%97%B6%E5%BA%8F%E5%88%86%E6%9E%90"><span class="toc-number">1.4.2.</span> <span class="toc-text">统计学时序分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E5%9F%9F%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.4.3.</span> <span class="toc-text">时域分析方法的步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E5%9F%9F%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%91%E5%B1%95%E8%BF%87%E7%A8%8B"><span class="toc-number">1.4.4.</span> <span class="toc-text">时域分析方法的发展过程</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E7%9A%84%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">时间序列的预处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C"><span class="toc-number">2.1.</span> <span class="toc-text">平稳性检验</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B3%E7%A8%B3%E6%97%B6%E5%BA%8F%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.1.1.</span> <span class="toc-text">平稳时序的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%A5%E5%B9%B3%E7%A8%B3%EF%BC%88%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%E6%88%96%E5%AF%86%E5%BA%A6%E5%85%B7%E6%9C%89%E5%B9%B3%E7%A7%BB%E4%B8%8D%E5%8F%98%E6%80%A7%EF%BC%89"><span class="toc-number">2.1.1.1.</span> <span class="toc-text">严平稳（概率分布或密度具有平移不变性）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%BD%E5%B9%B3%E7%A8%B3%EF%BC%88%E5%9D%87%E5%80%BC%E3%80%81%E6%96%B9%E5%B7%AE%E3%80%81%E8%87%AA%E5%8D%8F%E6%96%B9%E5%B7%AE%E3%80%81%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E5%85%B7%E6%9C%89%E5%B9%B3%E7%A7%BB%E4%B8%8D%E5%8F%98%E6%80%A7%EF%BC%89"><span class="toc-number">2.1.1.2.</span> <span class="toc-text">宽平稳（均值、方差、自协方差、自相关系数具有平移不变性）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E7%BB%9F%E8%AE%A1%E9%87%8F%EF%BC%88%E6%80%BB%E4%BD%93%EF%BC%89"><span class="toc-number">2.1.2.</span> <span class="toc-text">特征统计量（总体）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B3%E7%A8%B3%E6%97%B6%E5%BA%8F%E7%9A%84%E6%A0%B7%E6%9C%AC%E7%BB%9F%E8%AE%A1%E9%87%8F"><span class="toc-number">2.1.3.</span> <span class="toc-text">平稳时序的样本统计量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B3%E7%A8%B3%E6%80%A7%E7%9A%84%E6%A3%80%E9%AA%8C"><span class="toc-number">2.2.</span> <span class="toc-text">平稳性的检验</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E6%A3%80%E9%AA%8C%E6%96%B9%E6%B3%95"><span class="toc-number">2.2.1.</span> <span class="toc-text">图检验方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E6%A3%80%E9%AA%8C%E6%96%B9%E6%B3%95%EF%BC%88%E5%8D%95%E4%BD%8D%E6%A0%B9%E6%A3%80%E9%AA%8C%EF%BC%89"><span class="toc-number">2.2.2.</span> <span class="toc-text">统计检验方法（单位根检验）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%B1%82%E5%BA%8F%E5%88%97%E6%98%AF%E5%B9%B3%E7%A8%B3%E7%9A%84%EF%BC%9F"><span class="toc-number">2.2.3.</span> <span class="toc-text">为什么要求序列是平稳的？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%AF%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%A3%80%E9%AA%8C"><span class="toc-number">2.3.</span> <span class="toc-text">纯随机性检验</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%AF%E9%9A%8F%E6%9C%BA%E5%BA%8F%E5%88%97%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.3.1.</span> <span class="toc-text">纯随机序列的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%AF%E9%9A%8F%E6%9C%BA%E5%BA%8F%E5%88%97%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">2.3.2.</span> <span class="toc-text">纯随机序列的性质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%AF%E9%9A%8F%E6%9C%BA%E6%80%A7%E7%9A%84%E6%A3%80%E9%AA%8C"><span class="toc-number">2.3.3.</span> <span class="toc-text">纯随机性的检验</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%AF%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%A3%80%E9%AA%8C%E5%8E%9F%E7%90%86%EF%BC%9ABarlett-%E5%AE%9A%E7%90%86"><span class="toc-number">2.3.3.1.</span> <span class="toc-text">纯随机性检验原理：Barlett 定理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%AF%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%A3%80%E9%AA%8C%E7%9A%84%E5%81%87%E8%AE%BE%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.3.3.2.</span> <span class="toc-text">纯随机性检验的假设条件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%AF%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%A3%80%E9%AA%8C%E7%9A%84%E6%A3%80%E9%AA%8C%E7%BB%9F%E8%AE%A1%E9%87%8F"><span class="toc-number">2.3.3.3.</span> <span class="toc-text">纯随机性检验的检验统计量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%AF%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%A3%80%E9%AA%8C%E5%88%A4%E5%88%AB%E5%8E%9F%E5%88%99"><span class="toc-number">2.3.3.4.</span> <span class="toc-text">纯随机性检验判别原则</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AR%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">AR模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">3.1.</span> <span class="toc-text">时间序列模型的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AR%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">3.2.</span> <span class="toc-text">AR模型的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AR-P-%E5%BA%8F%E5%88%97%E4%B8%AD%E5%BF%83%E5%8C%96%E5%8F%98%E6%8D%A2"><span class="toc-number">3.3.</span> <span class="toc-text">AR(P) 序列中心化变换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B9%B3%E7%A8%B3%E6%80%A7"><span class="toc-number">3.4.</span> <span class="toc-text">模型的平稳性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E5%B9%B3%E7%A8%B3%E6%80%A7%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">3.4.1.</span> <span class="toc-text">模型平稳性的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E5%B9%B3%E7%A8%B3%E6%80%A7%E7%9A%84%E5%88%A4%E5%AE%9A"><span class="toc-number">3.4.2.</span> <span class="toc-text">模型平稳性的判定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A4%E5%88%AB%E5%8E%9F%E5%9B%A0"><span class="toc-number">3.4.2.1.</span> <span class="toc-text">判别原因</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A4%E5%88%AB%E6%96%B9%E6%B3%95"><span class="toc-number">3.4.2.2.</span> <span class="toc-text">判别方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AR-1-%E5%92%8C-AR-2-%E7%9A%84%E5%B9%B3%E7%A8%B3%E6%9D%A1%E4%BB%B6"><span class="toc-number">3.4.2.3.</span> <span class="toc-text">AR(1) 和 AR(2) 的平稳条件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E5%B9%B3%E7%A8%B3%E6%80%A7%E5%92%8C%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%B9%B3%E7%A8%B3%E6%80%A7%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">3.4.3.</span> <span class="toc-text">模型平稳性和时间序列平稳性的关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AR-%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%80%A7%E8%B4%A8"><span class="toc-number">3.5.</span> <span class="toc-text">AR 模型的统计性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#AR-P-%E7%9A%84%E8%87%AA%E5%8D%8F%E6%96%B9%E5%B7%AE%E5%92%8C%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E9%80%92%E6%8E%A8%E5%85%AC%E5%BC%8F"><span class="toc-number">3.5.1.</span> <span class="toc-text">AR(P) 的自协方差和自相关系数递推公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AR%E6%A8%A1%E5%9E%8B%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">3.5.2.</span> <span class="toc-text">AR模型自相关系数的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E6%80%A7%E8%B4%A8%E4%B8%80%EF%BC%9A%E6%8B%96%E5%B0%BE%E6%80%A7"><span class="toc-number">3.5.2.1.</span> <span class="toc-text">自相关系数性质一：拖尾性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8%E4%BA%8C%EF%BC%9A%E5%91%88%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F"><span class="toc-number">3.5.2.2.</span> <span class="toc-text">自相关系数的性质二：呈指数衰减</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AR-%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%98%B6%E6%95%B0%E5%88%A4%E5%AE%9A"><span class="toc-number">3.6.</span> <span class="toc-text">AR 模型的阶数判定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%81%8F%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0"><span class="toc-number">3.6.1.</span> <span class="toc-text">偏自相关系数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%81%8F%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">3.6.1.1.</span> <span class="toc-text">偏自相关系数的计算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%81%8F%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">3.6.1.2.</span> <span class="toc-text">偏自相关系数的性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AR-1-%E5%81%8F%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">3.6.1.3.</span> <span class="toc-text">AR(1) 偏自相关系数的计算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AR-2-%E5%81%8F%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">3.6.1.4.</span> <span class="toc-text">AR(2) 偏自相关系数的计算</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MA-%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">MA 模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#MA-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">4.1.</span> <span class="toc-text">MA 模型的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MA-%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%80%A7%E8%B4%A8"><span class="toc-number">4.2.</span> <span class="toc-text">MA 模型的统计性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">4.2.1.</span> <span class="toc-text">特征统计量的计算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9D%87%E5%80%BC"><span class="toc-number">4.2.1.1.</span> <span class="toc-text">均值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%B7%AE"><span class="toc-number">4.2.1.2.</span> <span class="toc-text">方差</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8D%8F%E6%96%B9%E5%B7%AE"><span class="toc-number">4.2.1.3.</span> <span class="toc-text">自协方差</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0"><span class="toc-number">4.2.1.4.</span> <span class="toc-text">自相关系数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MA-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%AF%E9%80%86%E6%80%A7"><span class="toc-number">4.3.</span> <span class="toc-text">MA 模型的可逆性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E9%80%86MA%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">4.3.1.</span> <span class="toc-text">可逆MA模型的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E9%80%86%E6%A6%82%E5%BF%B5%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7"><span class="toc-number">4.3.2.</span> <span class="toc-text">可逆概念的重要性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BB%B6%E8%BF%9F%E7%AE%97%E5%AD%90"><span class="toc-number">4.3.3.</span> <span class="toc-text">延迟算子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MA%E6%A8%A1%E5%9E%8B%E5%81%8F%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8B%96%E5%B0%BE"><span class="toc-number">4.3.4.</span> <span class="toc-text">MA模型偏自相关系数拖尾</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AR-%E5%92%8C-MA-%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-number">4.4.</span> <span class="toc-text">AR 和 MA 模型的选择</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ARMA-%E6%A8%A1%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">ARMA 模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ARMA-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">5.1.</span> <span class="toc-text">ARMA 模型的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E6%95%B0%E5%A4%9A%E9%A1%B9%E5%BC%8F"><span class="toc-number">5.2.</span> <span class="toc-text">系数多项式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B3%E7%A8%B3%E6%9D%A1%E4%BB%B6%E5%92%8C%E5%8F%AF%E9%80%86%E6%9D%A1%E4%BB%B6"><span class="toc-number">5.3.</span> <span class="toc-text">平稳条件和可逆条件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ARMA-p-q-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B9%B3%E7%A8%B3%E6%9D%A1%E4%BB%B6"><span class="toc-number">5.3.1.</span> <span class="toc-text">ARMA(p,q) 模型的平稳条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ARMA-p-q-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%AF%E9%80%86%E6%9D%A1%E4%BB%B6"><span class="toc-number">5.3.2.</span> <span class="toc-text">ARMA(p,q) 模型的可逆条件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%A0%E9%80%92%E5%BD%A2%E5%BC%8F%EF%BC%88AR-%E4%B8%8E%E9%80%86%E8%BD%AC%E5%BD%A2%E5%BC%8F-MA"><span class="toc-number">5.4.</span> <span class="toc-text">传递形式（AR)与逆转形式(MA)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9A%84%E8%AE%A1%E7%AE%97-1"><span class="toc-number">5.5.</span> <span class="toc-text">特征统计量的计算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%87%E5%80%BC-1"><span class="toc-number">5.5.1.</span> <span class="toc-text">均值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E5%B7%AE-1"><span class="toc-number">5.5.2.</span> <span class="toc-text">方差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8D%8F%E6%96%B9%E5%B7%AE-1"><span class="toc-number">5.5.3.</span> <span class="toc-text">自协方差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0-1"><span class="toc-number">5.5.4.</span> <span class="toc-text">自相关系数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%80%89%E6%8B%A9%E9%97%AE%E9%A2%98"><span class="toc-number">5.6.</span> <span class="toc-text">模型的选择问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%9E%E5%B9%B3%E7%A8%B3%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90%EF%BC%88ARIMA%E6%A8%A1%E5%9E%8B%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">非平稳时间序列分析（ARIMA模型）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%AE%E5%88%86%E8%BF%90%E7%AE%97"><span class="toc-number">6.1.</span> <span class="toc-text">差分运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E5%B7%AE%E5%88%86"><span class="toc-number">6.1.1.</span> <span class="toc-text">过差分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ARIMA-%E6%A8%A1%E5%9E%8B"><span class="toc-number">6.2.</span> <span class="toc-text">ARIMA 模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ARIMA-%E6%A8%A1%E5%9E%8B%E6%97%8F"><span class="toc-number">6.2.1.</span> <span class="toc-text">ARIMA 模型族</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E6%B8%B8%E8%B5%B0%E6%A8%A1%E5%9E%8B"><span class="toc-number">6.2.2.</span> <span class="toc-text">随机游走模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ARIMA-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B9%B3%E7%A8%B3%E6%80%A7"><span class="toc-number">6.2.3.</span> <span class="toc-text">ARIMA 模型的平稳性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ARIMA-%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%96%B9%E5%B7%AE%E9%BD%90%E6%80%A7"><span class="toc-number">6.2.4.</span> <span class="toc-text">ARIMA 模型的方差齐性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ARIMA-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%AD%A5%E9%AA%A4"><span class="toc-number">6.2.5.</span> <span class="toc-text">ARIMA 模型的建模步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%96%8F%E7%B3%BB%E6%95%B0%E6%A8%A1%E5%9E%8B%E7%B1%BB%E5%9E%8B"><span class="toc-number">6.2.6.</span> <span class="toc-text">疏系数模型类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A3%E8%8A%82%E6%A8%A1%E5%9E%8B"><span class="toc-number">6.3.</span> <span class="toc-text">季节模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%AD%A3%E8%8A%82%E6%A8%A1%E5%9E%8B"><span class="toc-number">6.3.1.</span> <span class="toc-text">简单季节模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%AE%E5%88%86%E5%B9%B3%E7%A8%B3"><span class="toc-number">6.3.1.1.</span> <span class="toc-text">差分平稳</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%98%E7%A7%AF%E5%AD%A3%E8%8A%82%E6%A8%A1%E5%9E%8B"><span class="toc-number">6.3.2.</span> <span class="toc-text">乘积季节模型</span></a></li></ol></li></ol></li></ol>	
-        </div>
-    
-</div>
-
-
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Power-BI-%E5%85%A5%E9%97%A8/">Power BI 入门</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E8%AE%BA/">数据分析方法论</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%8C%96%E7%AE%A1%E7%90%86%EF%BC%9A%E6%B4%9E%E6%82%89%E9%9B%B6%E5%94%AE%E5%8F%8A%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E8%BF%90%E8%90%A5/">数据化管理：洞悉零售及电子商务运营</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/">统计学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E6%80%9D%E7%BB%B4/">统计学思维</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/">统计学知识体系</a></li></ul>
     </div>
-</div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Excel/" rel="tag">Excel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NPS/" rel="tag">NPS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Power-Query/" rel="tag">Power Query</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/" rel="tag">方法论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%A8%E6%88%B7%E5%88%86%E6%9E%90/" rel="tag">用户分析</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%B5%E5%95%86%E9%9B%B6%E5%94%AE/" rel="tag">电商零售</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" rel="tag">统计学</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Excel/" style="font-size: 20px;">Excel</a> <a href="/tags/NPS/" style="font-size: 10px;">NPS</a> <a href="/tags/Power-Query/" style="font-size: 10px;">Power Query</a> <a href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/" style="font-size: 10px;">方法论</a> <a href="/tags/%E7%94%A8%E6%88%B7%E5%88%86%E6%9E%90/" style="font-size: 10px;">用户分析</a> <a href="/tags/%E7%94%B5%E5%95%86%E9%9B%B6%E5%94%AE/" style="font-size: 10px;">电商零售</a> <a href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" style="font-size: 15px;">统计学</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/24/hello-world/">welcome to my world</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/14/20200714-%E9%AB%98%E6%95%88%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%A5%9E%E5%99%A8%EF%BC%9APower%20Query/">高效的数据处理神器：Power Query</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/13/20200713-Excel%20%E4%BB%8E%E5%8C%BA%E5%9F%9F%E5%88%B0%E8%A1%A8/">Excel 从区域到表</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/12/20200712-Excel%20%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/">Excel 的前世今生</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/10/20200710-NPS%20%E7%94%A8%E6%88%B7%E5%87%80%E6%8E%A8%E8%8D%90%E5%88%86%E6%9E%90/">NPS用户净推荐分析</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 归一<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
 </body>
-
-
-<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/js/plugin.js"></script>
-<script src="/js/typed.js"></script>
-<script src="/js/diaspora.js"></script>
-
-
-<link rel="stylesheet" href="/photoswipe/photoswipe.css">
-<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
-
-
-<script src="/photoswipe/photoswipe.min.js"></script>
-<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    });
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-
-
-
 </html>
