@@ -260,6 +260,46 @@
       </tags>
   </entry>
   <entry>
+    <title>NPS用户净推荐分析</title>
+    <url>/2020/07/10/20200710-NPS%20%E7%94%A8%E6%88%B7%E5%87%80%E6%8E%A8%E8%8D%90%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<h1 id="什么是NPS？"><a href="#什么是NPS？" class="headerlink" title="什么是NPS？"></a>什么是NPS？</h1><p>NPS (Net Promoter Score) 可以<strong>衡量客户体验</strong>并<strong>预测业务增长</strong>。这一指标改变了商业世界，为全球的客户体验管理提供了可以参考的核心指标。</p>
+<p><img src="http://i1.fuimg.com/700295/de0fe7f50671df94.png"></p>
+<h2 id="NPS-计算"><a href="#NPS-计算" class="headerlink" title="NPS 计算"></a>NPS 计算</h2><p>调研提问方式：”您有多大可能把我们（或这个产品/服务/品牌等等）推荐给朋友或同事？请从0-10分打分。“</p>
+<p>受访者分为以下几类：</p>
+<ul>
+<li><strong>推荐者（Promoter）</strong>（9-10分）：是忠诚的爱好者，他们会继续购买并推荐他人，从而促进增长。</li>
+<li><strong>被动者（Passive）</strong>（7-分）：很满意，但很容易受到竞争产品的攻击。</li>
+<li><strong>批评者（Detractor）</strong>（0-6分）：是不满意的客户，他们可能会通过负面的口碑来损害您的品牌并阻碍增长。</li>
+</ul>
+<p>从推荐者的百分比中减去批评者的百分比会得出净推荐者分数，其范围可以从低到 -100（如果每个客户都是批评者）到最高 100（如果每个客户都是推荐者）。</p>
+<p><strong>净推荐值(NPS)=(推荐者数/总样本数)×100% - (批评者数/总样本数)×100%</strong></p>
+<h2 id="CEM的核心指标"><a href="#CEM的核心指标" class="headerlink" title="CEM的核心指标"></a>CEM的核心指标</h2><p>CEM （Customer Experience Management）</p>
+<p>将NPS用作衡量客户对品牌整体印象的关键指标。因为NPS是增长的领先指标，所以它为您的客户体验管理（CEM）计划提供了最佳的选择。将NPS与来自客户历程中各个角度的其他指标和见解相辅相成，您可以全面，切实地查看客户体验绩效。</p>
+<h2 id="受到员工的信赖"><a href="#受到员工的信赖" class="headerlink" title="受到员工的信赖"></a>受到员工的信赖</h2><p>从角落办公室到第一线的每个人都直截了当且容易理解，NPS为使您的员工参与客户体验计划提供了试金石。</p>
+<h1 id="NPS-预测增长"><a href="#NPS-预测增长" class="headerlink" title="NPS 预测增长"></a>NPS 预测增长</h1><p>改善客户体验的商业利益</p>
+<p>在改变商业世界十多年后，NPS仍然是唯一可以预测业务增长的客户体验。<strong>NPS 的经济学源于推荐者，被动者和批评者的行为差异。</strong>通过多种方式集中精力提高NPS，以提高业务绩效。</p>
+<h3 id="更高的利润和支出"><a href="#更高的利润和支出" class="headerlink" title="更高的利润和支出"></a>更高的利润和支出</h3><p><strong>推荐者通常不如其他客户对价格敏感</strong>，因为他们认为他们从贵公司整体上获得了良好的价值。对于<strong>价格更敏感的批评者</strong>而言，情况恰恰相反。同时，<strong>推荐者购买的商品比批评者购买的商品更多</strong>。他们倾向于通过自己喜欢的品牌整合更多的商品类别。<strong>推荐者对新产品和品牌扩展的兴趣</strong>也超过了批评者或被动者。</p>
+<h3 id="更高的保留率"><a href="#更高的保留率" class="headerlink" title="更高的保留率"></a>更高的保留率</h3><p>批评者通常比推荐者更容易出现问题，这意味着他们与您的公司之间的关系较短且利润较低。挽救那些批评者，将他们变成推荐者，从而并获得更高的利润。（有时候也可以战略性放弃这部分人群，因为批评者的获客成本往往很高，且容易给公司造成负面影响）</p>
+<h3 id="更好的口碑"><a href="#更好的口碑" class="headerlink" title="更好的口碑"></a>更好的口碑</h3><p>有多少新客户是因为声誉或推荐而选择您的公司？这些新客户的终生价值（包括销售或营销费用的任何节省）将大部分来自于推荐者。另一方面，批评者会导致负面的口口相传，因此您可以将这种拖累增长的成本归因于他们。</p>
+<p>总而言之，推荐者可以帮你减少获客成本，提高增长；而批评者则会增加你的获客成本，降低增长。</p>
+<h1 id="比较您的净促销员分数"><a href="#比较您的净促销员分数" class="headerlink" title="比较您的净促销员分数"></a>比较您的净促销员分数</h1><p>NPS基准测试指导您的目标和计划</p>
+<p>“我的 NPS 应该是多少？” 简单的问题，复杂的答案。NPS会因行业，地区或客户特征（例如年龄，收入水平或与公司在一起的时间）而异。</p>
+<p><img src="https://www.netpromoter.com/wp-content/uploads/2016/06/2016-b2c-sps-sector-averages.jpg" alt="B2C基准"></p>
+<p>因此，要了解您的净促销员得分，您<strong>必须将该得分与您的行业内以及直接和间接竞争对手的得分进行比较</strong>。得分高于竞争水平的公司发展更快，更成功。</p>
+<h3 id="使用NPS跟踪用户体验"><a href="#使用NPS跟踪用户体验" class="headerlink" title="使用NPS跟踪用户体验"></a>使用NPS跟踪用户体验</h3><p>NPS 分数是客户体验好坏的标志。NPS高于竞争对手的公司往往会增长更快并取得更大的成功。使用您自己的 NPS 分数（并查看竞争对手的分数），可以来跟踪您为提高客户体验的努力是否成功。</p>
+<p>参考网站：<a href="https://www.netpromoter.com/compare/">https://www.netpromoter.com/compare/</a></p>
+<h1 id="使用Power-BI-搭建-NPS-模型"><a href="#使用Power-BI-搭建-NPS-模型" class="headerlink" title="使用Power BI 搭建 NPS 模型"></a>使用Power BI 搭建 NPS 模型</h1><p>Power BI 搭建 NPS 模型：<a href="http://dwz.date/bzja">http://dwz.date/bzja</a></p>
+<p><img src="http://i2.tiimg.com/700295/586edb9c716cc8dc.png"></p>
+]]></content>
+      <categories>
+        <category>数据分析方法论</category>
+      </categories>
+      <tags>
+        <tag>用户分析</tag>
+        <tag>NPS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>描述统计分析</title>
     <url>/2020/07/01/20200701-%E6%8F%8F%E8%BF%B0%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h1 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h1><p>统计学是一门专门研究如何收集、处理、分析、解释数据并从数据中得出结论的科学。</p>
@@ -351,46 +391,6 @@
       </categories>
       <tags>
         <tag>统计学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NPS用户净推荐分析</title>
-    <url>/2020/07/10/20200710-NPS%20%E7%94%A8%E6%88%B7%E5%87%80%E6%8E%A8%E8%8D%90%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h1 id="什么是NPS？"><a href="#什么是NPS？" class="headerlink" title="什么是NPS？"></a>什么是NPS？</h1><p>NPS (Net Promoter Score) 可以<strong>衡量客户体验</strong>并<strong>预测业务增长</strong>。这一指标改变了商业世界，为全球的客户体验管理提供了可以参考的核心指标。</p>
-<p><img src="http://i1.fuimg.com/700295/de0fe7f50671df94.png"></p>
-<h2 id="NPS-计算"><a href="#NPS-计算" class="headerlink" title="NPS 计算"></a>NPS 计算</h2><p>调研提问方式：”您有多大可能把我们（或这个产品/服务/品牌等等）推荐给朋友或同事？请从0-10分打分。“</p>
-<p>受访者分为以下几类：</p>
-<ul>
-<li><strong>推荐者（Promoter）</strong>（9-10分）：是忠诚的爱好者，他们会继续购买并推荐他人，从而促进增长。</li>
-<li><strong>被动者（Passive）</strong>（7-分）：很满意，但很容易受到竞争产品的攻击。</li>
-<li><strong>批评者（Detractor）</strong>（0-6分）：是不满意的客户，他们可能会通过负面的口碑来损害您的品牌并阻碍增长。</li>
-</ul>
-<p>从推荐者的百分比中减去批评者的百分比会得出净推荐者分数，其范围可以从低到 -100（如果每个客户都是批评者）到最高 100（如果每个客户都是推荐者）。</p>
-<p><strong>净推荐值(NPS)=(推荐者数/总样本数)×100% - (批评者数/总样本数)×100%</strong></p>
-<h2 id="CEM的核心指标"><a href="#CEM的核心指标" class="headerlink" title="CEM的核心指标"></a>CEM的核心指标</h2><p>CEM （Customer Experience Management）</p>
-<p>将NPS用作衡量客户对品牌整体印象的关键指标。因为NPS是增长的领先指标，所以它为您的客户体验管理（CEM）计划提供了最佳的选择。将NPS与来自客户历程中各个角度的其他指标和见解相辅相成，您可以全面，切实地查看客户体验绩效。</p>
-<h2 id="受到员工的信赖"><a href="#受到员工的信赖" class="headerlink" title="受到员工的信赖"></a>受到员工的信赖</h2><p>从角落办公室到第一线的每个人都直截了当且容易理解，NPS为使您的员工参与客户体验计划提供了试金石。</p>
-<h1 id="NPS-预测增长"><a href="#NPS-预测增长" class="headerlink" title="NPS 预测增长"></a>NPS 预测增长</h1><p>改善客户体验的商业利益</p>
-<p>在改变商业世界十多年后，NPS仍然是唯一可以预测业务增长的客户体验。<strong>NPS 的经济学源于推荐者，被动者和批评者的行为差异。</strong>通过多种方式集中精力提高NPS，以提高业务绩效。</p>
-<h3 id="更高的利润和支出"><a href="#更高的利润和支出" class="headerlink" title="更高的利润和支出"></a>更高的利润和支出</h3><p><strong>推荐者通常不如其他客户对价格敏感</strong>，因为他们认为他们从贵公司整体上获得了良好的价值。对于<strong>价格更敏感的批评者</strong>而言，情况恰恰相反。同时，<strong>推荐者购买的商品比批评者购买的商品更多</strong>。他们倾向于通过自己喜欢的品牌整合更多的商品类别。<strong>推荐者对新产品和品牌扩展的兴趣</strong>也超过了批评者或被动者。</p>
-<h3 id="更高的保留率"><a href="#更高的保留率" class="headerlink" title="更高的保留率"></a>更高的保留率</h3><p>批评者通常比推荐者更容易出现问题，这意味着他们与您的公司之间的关系较短且利润较低。挽救那些批评者，将他们变成推荐者，从而并获得更高的利润。（有时候也可以战略性放弃这部分人群，因为批评者的获客成本往往很高，且容易给公司造成负面影响）</p>
-<h3 id="更好的口碑"><a href="#更好的口碑" class="headerlink" title="更好的口碑"></a>更好的口碑</h3><p>有多少新客户是因为声誉或推荐而选择您的公司？这些新客户的终生价值（包括销售或营销费用的任何节省）将大部分来自于推荐者。另一方面，批评者会导致负面的口口相传，因此您可以将这种拖累增长的成本归因于他们。</p>
-<p>总而言之，推荐者可以帮你减少获客成本，提高增长；而批评者则会增加你的获客成本，降低增长。</p>
-<h1 id="比较您的净促销员分数"><a href="#比较您的净促销员分数" class="headerlink" title="比较您的净促销员分数"></a>比较您的净促销员分数</h1><p>NPS基准测试指导您的目标和计划</p>
-<p>“我的 NPS 应该是多少？” 简单的问题，复杂的答案。NPS会因行业，地区或客户特征（例如年龄，收入水平或与公司在一起的时间）而异。</p>
-<p><img src="https://www.netpromoter.com/wp-content/uploads/2016/06/2016-b2c-sps-sector-averages.jpg" alt="B2C基准"></p>
-<p>因此，要了解您的净促销员得分，您<strong>必须将该得分与您的行业内以及直接和间接竞争对手的得分进行比较</strong>。得分高于竞争水平的公司发展更快，更成功。</p>
-<h3 id="使用NPS跟踪用户体验"><a href="#使用NPS跟踪用户体验" class="headerlink" title="使用NPS跟踪用户体验"></a>使用NPS跟踪用户体验</h3><p>NPS 分数是客户体验好坏的标志。NPS高于竞争对手的公司往往会增长更快并取得更大的成功。使用您自己的 NPS 分数（并查看竞争对手的分数），可以来跟踪您为提高客户体验的努力是否成功。</p>
-<p>参考网站：<a href="https://www.netpromoter.com/compare/">https://www.netpromoter.com/compare/</a></p>
-<h1 id="使用Power-BI-搭建-NPS-模型"><a href="#使用Power-BI-搭建-NPS-模型" class="headerlink" title="使用Power BI 搭建 NPS 模型"></a>使用Power BI 搭建 NPS 模型</h1><p>Power BI 搭建 NPS 模型：<a href="http://dwz.date/bzja">http://dwz.date/bzja</a></p>
-<p><img src="http://i2.tiimg.com/700295/586edb9c716cc8dc.png"></p>
-]]></content>
-      <categories>
-        <category>数据分析方法论</category>
-      </categories>
-      <tags>
-        <tag>用户分析</tag>
-        <tag>NPS</tag>
       </tags>
   </entry>
   <entry>
