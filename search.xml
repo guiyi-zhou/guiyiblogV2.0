@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>welcome to my blog</title>
-    <url>/2020/10/24/0.%20welcome-cover/</url>
-    <content><![CDATA[<p>​    </p>
-<p>“ 生命转瞬即逝，唯有思想、灵感与爱永存。”  ——  佐伊 · 安德森</p>
+    <title>Excel 攻略【合集】</title>
+    <url>/2020/10/25/0.%20categories%EF%BC%9AExcel%20%E6%94%BB%E7%95%A5/</url>
+    <content><![CDATA[<p>​    “ 生命转瞬即逝，唯有思想、灵感与爱永存。”  ——  佐伊 · 安德森</p>
+<p>………………………………………………………………………………………………………………………………………..</p>
+<h2 id="文章合集"><a href="#文章合集" class="headerlink" title="文章合集"></a>文章合集</h2><ol>
+<li><a href="https://guiyiblog.com/2020/06/28/20200628-Excel%20Dashboards%20and%20Reports/">Excel Dashboards and Reports</a></li>
+</ol>
 ]]></content>
+      <categories>
+        <category>Excel 攻略</category>
+      </categories>
   </entry>
   <entry>
     <title>数据分析方法论</title>
@@ -19,19 +25,6 @@
 ]]></content>
       <categories>
         <category>数据分析方法论</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Excel 攻略【合集】</title>
-    <url>/2020/10/25/0.%20categories%EF%BC%9AExcel%20%E6%94%BB%E7%95%A5/</url>
-    <content><![CDATA[<p>​    “ 生命转瞬即逝，唯有思想、灵感与爱永存。”  ——  佐伊 · 安德森</p>
-<p>………………………………………………………………………………………………………………………………………..</p>
-<h2 id="文章合集"><a href="#文章合集" class="headerlink" title="文章合集"></a>文章合集</h2><ol>
-<li><a href="https://guiyiblog.com/2020/06/28/20200628-Excel%20Dashboards%20and%20Reports/">Excel Dashboards and Reports</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Excel 攻略</category>
       </categories>
   </entry>
   <entry>
@@ -278,5 +271,12 @@
       <tags>
         <tag>Excel</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>welcome to my world</title>
+    <url>/2020/10/25/0.%20welcome-cover/</url>
+    <content><![CDATA[<p>​    </p>
+<p>“ 生命转瞬即逝，唯有思想、灵感与爱永存。”  ——  佐伊 · 安德森</p>
+]]></content>
   </entry>
 </search>
